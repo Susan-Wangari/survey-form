@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey form</h1>  
+      <p id="description">This is a form to collect views about our webinar</p>
+      <form action="/action_page.php" id="survey-form">
+          <label for="name">full name:<br> 
+          <input type="text" placeholder="full name" id="name">
+        </label><br>
+          <label for="email" required>email address:<br>
+          <input type="email" placeholder="email address" id="email" required>
+        </label><br>
+          <label for="number">mobile number:<br>
+          <input type="number" placeholder="mobile number" id="number" min="0" max="9">
+        </label><br>
+        <select id="dropdown">
+            <option value="country">Country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Central African Republic">Central African Republic</option>
+        </select><br>
+        <label for="time">Time of the Day</label><br><br>
+        <input type="radio" name="time" value="less than 1 hour">Less than 1 hour<br>
+        <input type="radio" name="time" value="1-2 hours">1-2 hours<br>
+        <input type="radio" name="time" value="2 hours or more">2 hours or more<br>
+        <label for="topic">Preferred Topic</label><br><br>
+        <input type="checkbox" name="topic" value="Web Development">Web Development<br>
+        <input type="checkbox" name="topic" value="Android">Android<br>
+        <input type="checkbox" name="topic" value="Cloud">Cloud<br>
+        <textarea rows="10" cols="30">Any comments or questions to our speakers</textarea><br>
+        <input type="submit" id="submit">
+      </form>
+    </body>
+</html>
